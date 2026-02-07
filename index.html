@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="result">
+            <form action="">
+                <h2>Result Calculation Form</h2>
+                <div class="contaier">
+                    <label for="">Bangla Full Mark:</label>
+                    <input type="number" name="" value="" id="bfullmark" onkeyup="result()" required class="field"> <br>
+                </div>
+                <div class="contaier">
+                    <label for=""> Bangla Obtained mark</label>
+                    <input type="number" name="" value="" id="bobtaiedmark" onkeyup="result()" required class="field">
+                </div>
+
+                <div class="contaier">
+                    <label for="">English Full Mark:</label>
+                    <input type="number" name="" value="" id="efullmark" onkeyup="result()" required class="field"> <br>
+                </div>
+                <div class="contaier">
+                    <label for=""> English Obtained mark</label>
+                    <input type="number" name="" value="" id="eobtaiedmark" onkeyup="result()" required class="field">
+                </div>
+
+                <div class="contaier">
+                    <label for="">Math Full Mark:</label>
+                    <input type="number" name="" value="" id="mfullmark" onkeyup="result()" required class="field"> <br>
+                </div>
+                <div class="contaier">
+                    <label for=""> Math Obtained mark</label>
+                    <input type="number" name="" value="" id="mobtaiedmark" onkeyup="result()" required class="field">
+                </div>
+
+                <div class="contaier">
+                    <label for="">Religion Full Mark:</label>
+                    <input type="number" name="" value="" id="rfullmark" onkeyup="result()" required class="field"> <br>
+                </div>
+                <div class="contaier">
+                    <label for=""> Religion Obtained mark</label>
+                    <input type="number" name="" value="" id="robtaiedmark" onkeyup="result()" required class="field">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <table border="5px">
+                <tr>
+                    <th>Name Of Sub</th>
+                    <th>Full Marks</th>
+                    <th>Obtained Mark</th>
+                    <th>Grade</th>
+                    <th>GPA</th>
+                </tr>
+                
+                <tr>
+                    <td>Bangla</td>
+                    <td id="tbanfull"></td>
+                    <td id="tbanobt"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td id="tengfull" ></td>
+                    <td id="tengobt"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td id="tmfullmark"></td>
+                    <td id="tmathobt"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Religion</td>
+                    <td id="trfull"></td>
+                    <td id="trelobt"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Final Result</td>
+                    <td id="tobtaidend"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
