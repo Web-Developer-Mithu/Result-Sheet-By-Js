@@ -26,9 +26,53 @@ function result() {
     document.getElementById("trelobt").innerHTML = rmark || 0;
 
     //Total Obtaide Mark Update
-    let totalObtaidend = banmark+emark+mmark+rmark;
-    document.getElementById("tobtaidend").innerHTML=totalObtaidend || 0;
+    let totalObtaidend = banmark + emark + mmark + rmark;
+    document.getElementById("tobtaidend").innerHTML = totalObtaidend || 0;
 
+    // Average Mark Update
+    let avg = totalObtaidend / 4;
+    document.getElementById("avgmark").innerHTML = avg;
+
+    let fullMark = banfmark + efmark + mfmark + rfmark;
+    document.getElementById("fullmark").innerHTML = fullMark;
+
+    let grade;
+    let gpa;
+    if (((banmark / banfmark * 100) < 33) || ((emark / efmark * 100) < 33)
+        || ((mmark / mfmark * 100) < 33) || ((rmark / rfmark * 100) < 33)) {
+        grade = "F";
+        gpa = 0;
+    } else if (avg >= 80) {
+    grade = "A+";
+    gpa = 5.00;
+}
+else if (avg >= 70) {
+    grade = "A";
+    gpa = 4.00;
+}
+else if (avg >= 60) {
+    grade = "A-";
+    gpa = 3.50;
+}
+else if (avg >= 50) {
+    grade = "B";
+    gpa = 3.00;
+}
+else if (avg >= 40) {
+    grade = "C";
+    gpa = 2.00;
+}
+else if (avg >= 33) {
+    grade = "D";
+    gpa = 1.00;
+}
+else {
+    grade = "F";
+    gpa = 0;
+}
+
+    document.getElementById("grade").innerHTML=grade;
+    document.getElementById("gpa").innerHTML=gpa;
 
 
 
